@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {ButtonComponent} from "@core/widgets";
 
 @Component({
-  imports: [CommonModule],
+  imports: [CommonModule, ButtonComponent],
   selector: 'app-motor-details',
-  template: `<p>MFE</p>`,
+  templateUrl: `motor-details.component.html`,
+  styleUrl: 'motor-details.component.css',
 })
 export class MotorDetailsComponent {}
