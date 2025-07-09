@@ -80,7 +80,13 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint"
+      "executor": "@nx/eslint:lint",
+      "lint": {
+        "executor": "@nx/eslint:lint",
+        "options": {
+          "lintFilePatterns": ["{projectRoot}/**/*.{ts,tsx,js,jsx,json,html}"]
+        }
+      }
     },
     "test": {
       "executor": "@nx/jest:jest",

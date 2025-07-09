@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,5 +8,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './button.component.css',
 })
 export class ButtonComponent {
-  @Input() label: string = 'Default Label';
+  @Input() label = 'Default Label';
 }

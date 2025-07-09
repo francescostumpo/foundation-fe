@@ -1,4 +1,5 @@
 import nx from '@nx/eslint-plugin';
+import angularEslint from '@angular-eslint/eslint-plugin';
 
 export default [
   ...nx.configs['flat/base'],
@@ -9,20 +10,19 @@ export default [
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    plugins: {
+      '@angular-eslint': angularEslint,
+    },
     rules: {
-      '@nx/enforce-module-boundaries': [
-        'error',
+      '@nx/dependency-checks': 'off',
+      "@angular-eslint/component-selector": [
+        "error",
         {
-          enforceBuildableLibDependency: true,
-          allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
-          depConstraints: [
-            {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
-            },
-          ],
-        },
-      ],
+          "type": "element",
+          "prefix": ["app", "c-widget"],   // add your allowed prefixes here
+          "style": "kebab-case"
+        }
+      ]
     },
   },
   {
