@@ -15,14 +15,14 @@ export default [
     },
     rules: {
       '@nx/dependency-checks': 'off',
-      "@angular-eslint/component-selector": [
-        "error",
+      '@angular-eslint/component-selector': [
+        'error',
         {
-          "type": "element",
-          "prefix": ["app", "c-widget"],   // add your allowed prefixes here
-          "style": "kebab-case"
-        }
-      ]
+          type: 'element',
+          prefix: ['app', 'c-widget'], // add your allowed prefixes here
+          style: 'kebab-case',
+        },
+      ],
     },
   },
   {

@@ -13,7 +13,9 @@
       "nx reset",
       "nx format:write --uncommitted",
       "nx reset",
-      "nx run-many --target=lint --all --fix --quiet --"
+      "nx run-many --target=lint --all --fix --quiet --",
+      "nx reset",
+      "nx run-many --target=test --all --passWithNoTests --"
     ]
   },
   "config": {
