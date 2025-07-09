@@ -14,9 +14,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: [
-    'alpha-motor-quote-and-buy'
-  ],
+  remotes: ['alpha-motor-quote-and-buy'],
 };
 
 /**

@@ -1,4 +1,3 @@
-
 # Microfrontend Project - Alpha Shell and Alpha Motor Quote and Buy
 
 ## Overview

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {ButtonComponent} from "@core/widgets";
+import { ButtonComponent } from '@core/widgets';
 
 @Component({
   imports: [CommonModule, ButtonComponent],
