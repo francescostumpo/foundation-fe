@@ -1,0 +1,10 @@
+#dropdown {
+  width: 10rem !important;
+}
+
+.card-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

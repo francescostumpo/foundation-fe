@@ -1,10 +1,13 @@
 {
   "portal": {
-    "home-link": "Home"
+    "motor": {
+      "card": {
+        "title": "Prodotto motor",
+        "description": "Showcase del prodotto motor"
+      }
+    }
   },
   "motor-details": {
-    "button": {
-      "save": "Salva"
-    }
+    "title": "Benvenuto su motor"
   }
 }

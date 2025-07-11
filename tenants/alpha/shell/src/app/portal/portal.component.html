@@ -1,10 +1,31 @@
-<nav class="remote-menu">
-  <ul>
-    <li>
-      <a routerLink="/">{{ 'portal.home-link' | translate }}</a>
-    </li>
-    <li>
-      <a routerLink="/motor-quote-and-buy/motor-details">Quote and Buy</a>
-    </li>
-  </ul>
-</nav>
+<header nx-header>
+  <nx-header-brand></nx-header-brand>
+  <nx-header-navigation></nx-header-navigation>
+  <nx-header-actions>
+    <nx-dropdown
+      id="dropdown"
+      verticalAlignCheckmark="center"
+      [(ngModel)]="currentLangDropdown"
+      (selectionChange)="toggleLanguage()"
+    >
+      @for (lang of langs; track lang.id) {
+      <nx-dropdown-item [value]="lang">
+        {{ lang.label }}
+      </nx-dropdown-item>
+      }
+    </nx-dropdown>
+  </nx-header-actions>
+</header>
+
+<div class="card-container">
+  <nx-card clickable class="nx-margin-2xs">
+    <h3 nxHeadline size="l">
+      <a nxCardMainLink>{{ 'portal.motor.card.title' | translate }}</a>
+    </h3>
+    <nx-link style="margin-top: 1rem" size="small"
+      ><a nxCardSecondaryInfo href="/motor-quote-and-buy/motor-details">{{
+        'portal.motor.card.description' | translate
+      }}</a></nx-link
+    >
+  </nx-card>
+</div>
