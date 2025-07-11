@@ -31,9 +31,6 @@ pnpm-debug.log*
 .env.local
 .env.*.local
 
-# Storybook build output
-/storybook-static/
-
 # Jest coverage output
 /coverage/
 

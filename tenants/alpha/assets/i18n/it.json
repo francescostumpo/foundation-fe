@@ -1,0 +1,10 @@
+{
+  "portal": {
+    "home-link": "Home"
+  },
+  "motor-details": {
+    "button": {
+      "save": "Salva"
+    }
+  }
+}

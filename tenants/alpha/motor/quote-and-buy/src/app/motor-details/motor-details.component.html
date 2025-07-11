@@ -1,1 +1,6 @@
-<c-widget-button label="MFE"></c-widget-button>
+<button (click)="toggleLanguage()">
+  Switch to {{ currentLang === 'en' ? 'Italiano' : 'English' }}
+</button>
+
+<!-- Example Translated Button -->
+<button>{{ 'motor-details.button.save' | translate }}</button>

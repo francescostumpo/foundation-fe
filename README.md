@@ -9,13 +9,13 @@ The main remote currently integrated is:
 
 - **alpha-motor-quote-and-buy**: Provides the "Quote and Buy" motor journey feature.
 
-Other independent widgets and utilities live in separate Nx libs with their own README files.
+Other independent utilities live in separate Nx lib with its own README file.
 
 ## Architecture
 
 - **Shell (alpha-shell)**: The host app. It defines routes and lazy-loads remotes using dynamic imports through Module Federation.
 - **Remote (alpha-motor-quote-and-buy)**: Exposes Angular routes and components remotely. It is built and served independently.
-- **Shared libs**: Common widgets and utilities used by both shell and remotes.
+- **Shared libs**: Common widgets and utilities used by both shell and remotes [NDBX](https://ngx-ndbx.frameworks.allianz.io/documentation/pagination/overview).
 
 ## Getting Started
 
@@ -95,7 +95,7 @@ nx g @nx/angular:setup-mf alpha-motor-quote-and-buy --mfType=remote --host=alpha
 
 ---
 
-Widgets and utilities README files are located in their respective libs folders.
+Utilities README files is located in the respective lib folder.
 
 ---
 

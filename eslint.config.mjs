@@ -15,11 +15,13 @@ export default [
     },
     rules: {
       '@nx/dependency-checks': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-inferrable-types': 'off',
       '@angular-eslint/component-selector': [
         'error',
         {
           type: 'element',
-          prefix: ['app', 'c-widget'], // add your allowed prefixes here
+          prefix: ['app'], // add your allowed prefixes here
           style: 'kebab-case',
         },
       ],

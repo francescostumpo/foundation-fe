@@ -5,7 +5,13 @@ export const appRoutes: Route[] = [
   {
     path: 'motor-quote-and-buy',
     loadChildren: () =>
-      import('alpha_motor_quote_and_buy/Routes').then((m) => m.remoteRoutes),
+      import('alpha_motor_quote_and_buy/Routes')
+        .then((m) => m.remoteRoutes)
+        .catch((err) => {
+          console.warn('Remote failed to load:', err);
+          // This returns no routes at all for this path
+          return [];
+        }),
   },
   {
     path: 'portal',

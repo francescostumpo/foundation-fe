@@ -1,5 +1,5 @@
 export default {
-  displayName: 'service',
+  displayName: 'cacheService',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

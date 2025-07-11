@@ -16,7 +16,6 @@
     "baseUrl": ".",
     "paths": {
       "@core/utilities": ["core/utilities/src/index.ts"],
-      "@core/widgets": ["core/widgets/src/index.ts"],
       "alpha_motor_quote_and_buy/Routes": [
         "tenants/alpha/motor/quote-and-buy/src/app/entry.routes.ts"
       ]
